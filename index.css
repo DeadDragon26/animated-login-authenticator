@@ -1,0 +1,209 @@
+@import url('https//:fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900;&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right,blue,navy,lightblue);
+}
+.loginpage{
+  position: relative;
+  height: 440px;
+  width: 420px;
+  background: rgba(255,255,255,.2);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: 0 0 50 rgba(0,0,0,.1);
+  padding: 40px;
+}
+.form-loginpage{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  transition: 1s ease-in-out;
+}
+.loginpage.active .form-loginpage.sign-in{
+  transform: scale(0)translate(-300px,500px) ;
+  -webkit-transform: scale(0)translate(-300px,500px) ;
+  -moz-transform: scale(0)translate(-300px,500px) ;
+  -ms-transform: scale(0)translate(-300px,500px) ;
+  -o-transform: scale(0)translate(-300px,500px) ;
+}
+.loginpage .form-loginpage.sign-up{
+  position: absolute;
+  top: 0;
+  transform: scale(0)translate(200px,-500px);
+  -webkit-transform: scale(0)translate(200px,-500px);
+  -moz-transform: scale(0)translate(200px,-500px);
+  -ms-transform: scale(0)translate(200px,-500px);
+  -o-transform: scale(0)translate(200px,-500px);
+}
+.loginpage.active .form-loginpage.sign-up{
+  transform: scale(1)translate(0,0) ;
+  -webkit-transform: scale(1)translate(0,0) ;
+  -moz-transform: scale(1)translate(0,0) ;
+  -ms-transform: scale(1)translate(0,0) ;
+  -o-transform: scale(1)translate(0,0) ;
+}
+.form-loginpage.sign-in h3{
+  text-align: center;
+  color: white;
+  font-size: 30px;
+
+}
+.form-loginpage.sign-up h3{
+  text-align: center;
+  color: white;
+  font-size: 30px;
+
+}
+.input-grp{
+  position: relative;
+  margin: 30px 0;
+  border-bottom: 2px solid white;
+
+}
+.input-grp label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  font-size: 16px;
+  color: white;
+  pointer-events: none;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+.input-grp input{
+  color: white;
+  padding:0 5px;
+  height: 40px;
+  width: 320px;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-grp input:focus~label,
+.input-grp input:valid~label {
+  top: -5px;
+}
+.remember-me{
+  margin: -5px 0 15px 5px;
+}
+.remember-me label{
+  color: white;
+  font-size: 14px;
+}
+.remember-me label input{
+  accent-color:pink;
+}
+button{
+  background-color: lightcoral;
+  width: 100%;
+  position: relative;
+  height: 40px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.signup-link{
+  font-size: 14px; ;
+  text-align: center;
+  margin: 15px 0;
+}
+.signup-link p{
+  color: white;
+}
+
+.signup-link p a{
+  color: lightcoral;
+  text-decoration: none;
+  font-weight: 500;
+}
+.signup-link p a:hover{
+  text-decoration: underline;
+
+}
+
+.social-paltforms {
+  color: white;
+  text-align: center;
+  font-size: 14px; 
+}
+.social-icons a{
+  display: inline-block;
+  width:35px ;
+  height: 35px;
+  background: transparent;
+  border: 1px solid white;
+  text-align: center;
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  -ms-border-radius:50%;
+  -o-border-radius:50%;
+  line-height: 35px;
+  margin: 15px 6px 0;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+.social-icons a:hover {
+  background-color: white;
+}
+.social-icons a i{
+   color: white;
+   font-size: 14px;
+   transition: 0.3s;
+   -ms-transition: 0.3s;
+   -o-transition: 0.3s;
+   -webkit-transition: 0.3s;
+   -moz-transition: 0.3s;
+}
+.social-icons a:hover i {
+  color: rgba(0, 0,0, .3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

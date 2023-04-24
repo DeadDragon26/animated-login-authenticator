@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Login Authentication.</title>
+   
+</head>
+<body>
+        <div class="loginpage">
+            <div class="form-loginpage sign-in">
+        <form action="">
+                <h3><INS>SIGN IN</INS></h3><br>
+                <div class="input-grp">
+                <input type="text" id="username" required>
+                <label for="">USERNAME</label>
+               </div>
+                <div class="input-grp">
+                <input type="password" id="password" required >
+                <label for="">PASSWORD</label>
+                </div>
+                <div class="remember-me">
+                <label><input type="checkbox">remember me</label>
+                </div>
+            <button id="btn1" type="submit" onclick="validate()" >LOGIN</button>
+            <div class="signup-link">
+                <p>dont have an account?<a href="#" class="signup-linkbtn">sign up </a></p>
+        </div>
+        <div class="social-paltforms"><p>
+            or sign in with
+        </p>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-google"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        </div>
+        </form>
+    </div>
+        <div class="form-loginpage sign-up">
+            <form action="">
+                    <h3><INS>SIGN UP</INS></h3><br>
+                    <div class="input-grp">
+                    <input type="text"  required>
+                    <label for="">USERNAME</label>
+                   </div>
+                    <div class="input-grp">
+                    <input type="email"  required>
+                    <label for="">EMAIL</label>
+                   </div>
+                    <div class="input-grp">
+                    <input type="password" required >
+                    <label for="">PASSWORD</label>
+                    </div>
+                    <div class="remember-me">
+                    <label><input type="checkbox">i agree to the terms and conditions</label>
+                    </div>
+                <button >REGISTER</button>
+                <div class="signup-link">
+                    <p>already have an account?<a href="#" class="signin-linkbtn">sign in</a></p>
+            </div>
+    </form>
+       </div>
+        </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
